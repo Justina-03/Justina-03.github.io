@@ -140,11 +140,6 @@ span.highlight {
   display: block;
 }
 
-/* Ensure sub-sections (honors, projects, extracurricular) are block-level by default */
-.honors, .projects, .extracurricular {
-  display: block;
-}
-
 /* Adjustments for when individual sections need to be hidden */
 .honors, .projects, .extracurricular {
   margin-top: 20px;

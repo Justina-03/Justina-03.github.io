@@ -17,8 +17,13 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 
-    // Home 탭이 아닌 경우, 해당하는 섹션만 보이게
-    if (tabName !== 'Home') {
+    // Home 탭이면 모든 섹션을 보이게 설정
+    if (tabName === 'Home') {
+        document.querySelector('.honors').style.display = 'block';
+        document.querySelector('.projects').style.display = 'block';
+        document.querySelector('.extracurricular').style.display = 'block';
+    } else {
+        // Home 탭이 아닌 경우, 해당하는 섹션만 보이게
         document.querySelector('.honors').style.display = tabName === 'Honors' ? 'block' : 'none';
         document.querySelector('.projects').style.display = tabName === 'Projects' ? 'block' : 'none';
         document.querySelector('.extracurricular').style.display = tabName === 'Extracurricular' ? 'block' : 'none';
