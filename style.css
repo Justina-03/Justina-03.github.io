@@ -9,6 +9,12 @@ a:hover {
   text-decoration: none;
 }
 
+body {
+  padding-top: 60px; /* 네비게이션바 높이만큼 본문 여백 추가 */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 body,
 td,
 th,
@@ -86,14 +92,13 @@ span.highlight {
 
 .tab {
   overflow: hidden;
-  background-color: #163A64;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  padding: 15px 0;
+  background-color: #163A64; /* 기본 어두운 파란색 */
+  padding: 10px 0;
   text-align: right;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* 네비게이션바가 화면 전체 너비를 차지하게 만듦 */
+  position: fixed; /* 상단 고정 */
+  top: 0;
+  z-index: 1;
 }
 
 .tab button {
@@ -108,7 +113,6 @@ span.highlight {
 }
 
 .tab button:hover {
-  background-color: #0F2A4D;
   text-decoration: underline;
 }
 
