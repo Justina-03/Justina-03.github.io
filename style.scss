@@ -150,3 +150,16 @@ span.highlight {
 .honors, .projects, .extracurricular {
   margin-top: 20px;
 }
+
+/* 특정 링크 스타일링 - Junghyun Kim에만 적용될 수 있도록 특정 클래스 추가 */
+.junghyun-link {
+  text-decoration: none; /* 밑줄 없애기 */
+  color: #1772d0; /* 기본 파란색 설정 */
+  font-size: inherit; /* 다른 텍스트와 같은 글씨 크기 */
+}
+
+.junghyun-link:hover {
+  color: #0f5a99; /* 마우스 hover 시 살짝 더 진한 파란색 강조 */
+  text-decoration: none; /* hover 시에도 밑줄 유지하지 않음 */
+}
+
