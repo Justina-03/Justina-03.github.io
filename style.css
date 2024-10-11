@@ -67,10 +67,9 @@ span.highlight {
 }
 
 /**********************/
-/* 네비게이션 바 전체 적용 */
+/* TAB STYLES */
 /**********************/
 
-/* 탭 네비게이션 바 */
 .tab {
   display: flex;
   justify-content: center;
@@ -81,9 +80,7 @@ span.highlight {
   position: sticky;
   top: 0;
   z-index: 1000;
-  margin: 0;
-  box-shadow: none;
-  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Tab buttons */
@@ -99,12 +96,14 @@ span.highlight {
   transition: background-color 0.3s ease;
 }
 
+/* Change tab button color on hover */
 .tab button:hover {
   background-color: #0F2A4D;
   color: white;
   text-decoration: underline;
 }
 
+/* Style the active tab button */
 .tab button.active {
   background-color: #0A2342;
   color: white;
@@ -115,44 +114,16 @@ span.highlight {
   display: none;
   padding: 20px;
   border-top: none;
-  width: 100%;
-  overflow: auto;
 }
 
+/* Show active tab content */
 .activecontent {
   display: block;
 }
 
+/* Adjustments for when individual sections need to be hidden */
 .honors, .projects, .extracurriculars {
   margin-top: 20px;
-}
-
-/**********************/
-/* 본문(body) 여백 유지 */
-/**********************/
-
-/* 전체 본문을 감싸는 컨테이너 */
-.container {
-  max-width: 800px; /* 본문 너비를 제한 */
-  margin: 0 auto;   /* 중앙 정렬 */
-  padding: 20px;    /* 여백을 유지 */
-}
-
-/**********************/
-/* 이미지 반응형 처리 */
-/**********************/
-
-/* 이미지 크기를 비율에 맞게 조정 */
-img {
-  max-width: 100%;
-  height: auto; /* 비율 유지하며 크기 조정 */
-  display: block;
-  margin: 0 auto; /* 가운데 정렬 */
-}
-
-.project-thumbnail {
-  width: 100%; /* 프로젝트 섹션의 이미지도 부모 요소에 맞게 확장 */
-  height: auto;
 }
 
 /**********************/
