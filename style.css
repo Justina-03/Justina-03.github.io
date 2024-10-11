@@ -154,7 +154,7 @@ body {
 
 /* 이미지 크기를 비율에 맞게 조정 */
 img {
-  max-width: 50%;
+  max-width: 25%;
   height: auto; /* 비율 유지하며 크기 조정 */
   display: block;
   margin: 0 auto; /* 가운데 정렬 */
