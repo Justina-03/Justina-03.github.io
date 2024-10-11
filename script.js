@@ -26,6 +26,6 @@ function openTab(evt, tabName) {
         // Home 탭이 아닌 경우, 해당하는 섹션만 보이게
         document.querySelector('.honors').style.display = tabName === 'Honors' ? 'block' : 'none';
         document.querySelector('.projects').style.display = tabName === 'Projects' ? 'block' : 'none';
-        document.querySelector('.extracurricular').style.display = tabName === 'Extracurricular' ? 'block' : 'none';
+        document.querySelector('.extracurricular activities').style.display = tabName === 'Extracurricular' ? 'block' : 'none';
     }
 }
