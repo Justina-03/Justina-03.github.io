@@ -67,6 +67,25 @@ span.highlight {
 }
 
 /**********************/
+/* 컨테이너 수정 */
+/**********************/
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 컨텐츠가 제한된 범위에 갇히지 않도록 수정 */
+.container {
+  width: 100%;
+  max-width: none; /* 최대 너비 제한을 없앰 */
+  margin: 0;
+  padding: 0;
+}
+
+/**********************/
 /* TAB STYLES */
 /**********************/
 
@@ -85,7 +104,6 @@ span.highlight {
   padding: 0;
   box-shadow: none;
   border: none;
-  flex-wrap: wrap; /* 반응형을 위한 수정 */
 }
 
 /* Tab buttons */
@@ -117,6 +135,7 @@ span.highlight {
   display: none;
   padding: 20px;
   border-top: none;
+  width: 100%;
   height: calc(100% - 60px);
   overflow: auto;
 }
