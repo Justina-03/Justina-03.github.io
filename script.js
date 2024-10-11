@@ -1,6 +1,6 @@
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
-    
+
     // 모든 탭 콘텐츠 숨기기
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -13,19 +13,10 @@ function openTab(evt, tabName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // 선택한 탭만 보이게 설정
+    // 선택한 탭 콘텐츠만 보이도록 설정
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-
-    // Home 탭이면 모든 섹션을 보이게 설정
-    if (tabName === 'Home') {
-        document.querySelector('.honors').style.display = 'block';
-        document.querySelector('.projects').style.display = 'block';
-        document.querySelector('.extracurricular').style.display = 'block';
-    } else {
-        // Home 탭이 아닌 경우, 해당하는 섹션만 보이게
-        document.querySelector('.honors').style.display = tabName === 'Honors' ? 'block' : 'none';
-        document.querySelector('.projects').style.display = tabName === 'Projects' ? 'block' : 'none';
-        document.querySelector('.extracurricular').style.display = tabName === 'Extracurricular' ? 'block' : 'none';
-    }
 }
+
+// 기본적으로 Home 탭을 표시
+document.getElementById('Home').style.display = 'block';

@@ -114,6 +114,7 @@ span.highlight {
 
 /* Change tab button color on hover */
 .tab button:hover {
+  background-color: #163A64;
   text-decoration: underline; /* hover 시 밑줄 추가 */
 }
 
