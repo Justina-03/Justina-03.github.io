@@ -18,6 +18,8 @@ th,
 tr,
 p,
 a {
+  margin: 0;
+  padding: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
@@ -101,9 +103,11 @@ span.highlight {
   width: 100%; /* 화면 전체 너비 */
   position: sticky; /* 스크롤 시 상단에 고정 */
   top: 0; /* 화면 맨 위에 위치 */
+  margin: 0;
   z-index: 1000; /* 다른 요소들보다 위에 표시 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가로 부드러운 느낌 */
 }
+
 
 /* Tab buttons */
 .tab button {
