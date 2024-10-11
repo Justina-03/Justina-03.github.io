@@ -36,7 +36,7 @@ h2 {
   font-weight: normal;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display: inline;
 }
 
 h3 {
@@ -46,7 +46,7 @@ h3 {
   font-display: auto;
   padding: 0px;
   margin: 0px;
-  display:inline; 
+  display: inline;
 }
 
 h1 {
@@ -62,72 +62,50 @@ h1 {
   margin-right: 0px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
-}
-
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
-}
-
 span.highlight {
   background-color: #ffffd0;
 }
-
 
 /**********************/
 /* TAB STYLES */
 /**********************/
 
 .tab {
-  display: flex; /* 플렉스박스 사용으로 정렬 */
-  justify-content: center; /* 중앙에 정렬 */
-  align-items: center; /* 수직 중앙 정렬 */
-  background-color: #163A64; /* 네비게이션 배경 어두운 파란색 */
-  padding: 10px 0; /* 상하 패딩 추가 */
-  width: 100%; /* 화면 전체 너비 */
-  position: sticky; /* 스크롤 시 상단에 고정 */
-  top: 0; /* 화면 맨 위에 위치 */
-  z-index: 1000; /* 다른 요소들보다 위에 표시 */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가로 부드러운 느낌 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #163A64;
+  padding: 10px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Tab buttons */
 .tab button {
   background-color: inherit;
-  color: white; /* 텍스트 흰색 */
-  padding: 14px 20px; /* 패딩 추가 */
-  border: none; /* 테두리 제거 */
+  color: white;
+  padding: 14px 20px;
+  border: none;
   cursor: pointer;
-  font-size: 17px; /* 폰트 크기 */
-  font-weight: 500; /* 굵은 폰트 */
-  margin: 0 15px; /* 탭 버튼 사이의 간격 */
-  transition: background-color 0.3s ease; /* 부드러운 배경색 전환 */
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 15px;
+  transition: background-color 0.3s ease;
 }
 
 /* Change tab button color on hover */
 .tab button:hover {
-  background-color: #0F2A4D; /* hover 시 더 진한 파란색 */
+  background-color: #0F2A4D;
   color: white;
-  text-decoration: underline; /* hover 시 밑줄 추가 */
+  text-decoration: underline;
 }
 
 /* Style the active tab button */
 .tab button.active {
-  background-color: #0A2342; /* 눌렀을 때 더 어두운 파란색 */
+  background-color: #0A2342;
   color: white;
 }
 
@@ -149,17 +127,6 @@ span.highlight {
   margin-top: 20px;
 }
 
-/* 특정 링크 스타일링 - Junghyun Kim에만 적용될 수 있도록 특정 클래스 추가 */
-.junghyun-link {
-  text-decoration: none; /* 밑줄 없애기 */
-  color: #1772d0; /* 기본 파란색 설정 */
-  font-size: inherit; /* 다른 텍스트와 같은 글씨 크기 */
-}
-
-.junghyun-link:hover { 
-  text-decoration: underline; /* hover 시에도 밑줄 유지하지 않음 */
-}
-
 /**********************/
 /* EXTRACURRICULAR STYLES */
 /**********************/
@@ -179,4 +146,35 @@ table.extracurricular-table td, table.extracurricular-table th {
 
 table.extracurricular-table th {
   text-align: left;
+}
+
+/* Navigation Links */
+nav {
+  background-color: #1f3a5f;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #a1c4fd;
 }
