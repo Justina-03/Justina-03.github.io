@@ -94,11 +94,12 @@ span.highlight {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-color: #163A64; /* 기본 어두운 파란색 */
-  padding: 10px 0;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #163A64;
   text-align: right;
-  width: 100%; /* 네비게이션바가 화면 전체 너비를 차지하게 만듦 */
-  position: fixed; /* 상단 고정 */
+  width: 120%;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
