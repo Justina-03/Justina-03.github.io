@@ -92,6 +92,8 @@ span.highlight {
 
 .tab {
   overflow: hidden;
+  display: flex
+  justify-content: center
   background-color: #163A64; /* 기본 어두운 파란색 */
   padding: 10px 0;
   text-align: right;
