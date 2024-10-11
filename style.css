@@ -114,7 +114,6 @@ span.highlight {
   cursor: pointer;
   font-size: 17px; /* 폰트 크기 */
   font-weight: 500; /* 굵은 폰트 */
-  text-transform: uppercase; /* 대문자로 표시 */
   margin: 0 15px; /* 탭 버튼 사이의 간격 */
   transition: background-color 0.3s ease; /* 부드러운 배경색 전환 */
 }
