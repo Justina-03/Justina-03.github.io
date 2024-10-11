@@ -95,8 +95,10 @@ span.highlight {
 /* Tab container styles */
 .tab {
   overflow: hidden;
+  justify-content: center;
   background-color: #163A64; /* 이미지의 어두운 파란색 */
   padding: 10px 0;
+  width: 100%;
   text-align: right; /* 오른쪽 정렬 */
 }
 
