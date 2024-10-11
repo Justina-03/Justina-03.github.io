@@ -1,75 +1,8 @@
-/**************/
-/* BASE RULES */
-/**************/
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display: inline;
-}
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display: inline;
-}
-
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-span.highlight {
-  background-color: #ffffd0;
-}
-
 /**********************/
 /* TAB STYLES */
 /**********************/
 
+/* 탭 네비게이션 바 */
 .tab {
   display: flex;
   justify-content: center;
@@ -80,7 +13,10 @@ span.highlight {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
 }
 
 /* Tab buttons */
@@ -114,66 +50,11 @@ span.highlight {
   display: none;
   padding: 20px;
   border-top: none;
+  height: calc(100% - 60px); /* 네비게이션 바를 제외한 나머지 화면을 차지 */
+  overflow: auto; /* 내용이 길어질 경우 스크롤 가능 */
 }
 
 /* Show active tab content */
 .activecontent {
   display: block;
-}
-
-/* Adjustments for when individual sections need to be hidden */
-.honors, .projects, .extracurriculars {
-  margin-top: 20px;
-}
-
-/**********************/
-/* EXTRACURRICULAR STYLES */
-/**********************/
-
-/* Extracurricular 표 스타일 */
-table.extracurricular-table {
-  width: 100%;
-  border-spacing: 20px;
-  border-collapse: collapse;
-  margin-bottom: 30px;
-}
-
-table.extracurricular-table td, table.extracurricular-table th {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-}
-
-table.extracurricular-table th {
-  text-align: left;
-}
-
-/* Navigation Links */
-nav {
-  background-color: #1f3a5f;
-  padding: 1rem;
-  border-radius: 10px;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 1rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.nav-links a:hover {
-  color: #a1c4fd;
 }
