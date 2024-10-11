@@ -10,7 +10,7 @@ a:hover {
 }
 
 body {
-  padding-top: 60px; /* 네비게이션바 높이만큼 본문 여백 추가 */
+  padding-top: 60px;
   max-width: 800px;
   margin: 0 auto;
 }
