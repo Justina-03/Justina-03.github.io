@@ -163,6 +163,36 @@ span.highlight {
   text-decoration: underline; /* hover 시에도 밑줄 유지하지 않음 */
 }
 
+/* Navigation Links */
+nav {
+  background-color: #1f3a5f;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0; /* Removed rounded corners */
+  margin: 0; /* Removed margin to make it extend to the screen edges */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around; /* Changed from space-between for even spacing */
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  color: #a1c4fd;
+}
+
+
 /**********************/
 /* EXTRACURRICULAR STYLES */
 /**********************/
