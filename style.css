@@ -154,14 +154,14 @@ body {
 
 /* 이미지 크기를 비율에 맞게 조정 */
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto; /* 비율 유지하며 크기 조정 */
   display: block;
   margin: 0 auto; /* 가운데 정렬 */
 }
 
 .project-thumbnail {
-  width: 100%; /* 프로젝트 섹션의 이미지도 부모 요소에 맞게 확장 */
+  width: 80%; /* 프로젝트 섹션의 이미지도 부모 요소에 맞게 확장 */
   height: auto;
 }
 
