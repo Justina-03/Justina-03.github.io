@@ -95,7 +95,7 @@ span.highlight {
 /* Tab container styles */
 .tab {
   overflow: hidden;
-  background-color: #163A64; /* 이미지의 어두운 파란색 */
+  background-color: #163A64; /* 기본 어두운 파란색 */
   padding: 10px 0;
   text-align: right; /* 오른쪽 정렬 */
 }
@@ -109,12 +109,11 @@ span.highlight {
   cursor: pointer;
   font-size: 17px;
   display: inline-block;
+  text-decoration: none; /* 기본적으로 밑줄 없음 */
 }
 
 /* Change tab button color on hover */
 .tab button:hover {
-  background-color: #0F2A4D; /* hover 시 더 진한 파란색 */
-  color: white;
   text-decoration: underline; /* hover 시 밑줄 추가 */
 }
 
@@ -122,6 +121,7 @@ span.highlight {
 .tab button.active {
   background-color: #0A2342; /* 눌렀을 때 더 어두운 파란색 */
   color: white;
+  text-decoration: none; /* 눌렀을 때 밑줄 없음 */
 }
 
 /* Tab content */
