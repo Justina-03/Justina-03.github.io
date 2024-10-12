@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 push할 때 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2  # 코드를 체크아웃
+    - name: Build and Deploy
+      run: echo "Hello, GitHub Actions!"  # 원하는 빌드 명령어 추가
+
+    timeout-minutes: 60  # 60분 타임아웃 설정
