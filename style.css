@@ -98,6 +98,7 @@ span.highlight {
 
 /* Change tab button color on hover */
 .tab button:hover {
+  background-color: #163A64
   color: white;
   text-decoration: underline;
 }
