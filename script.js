@@ -16,7 +16,14 @@ function openTab(evt, tabName) {
     // 선택된 탭 보이기
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-}
 
-// 페이지가 로드되면 기본적으로 Home 탭이 보이도록 설정
-document.getElementById("Home").style.display = "block";
+    // 섹션으로 이동할 때 약간의 지연 주기
+    setTimeout(function() {
+        if (location.hash) {
+            var target = document.querySelector(location.hash);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, 200);
+}
