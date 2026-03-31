@@ -5,7 +5,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-E00L9PT3V9');
   </script>
   <title>Junghyun Kim</title>
@@ -14,86 +13,30 @@
   <meta name="author" content="Junghyun Kim" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- External CSS for tab styling -->
   <link rel="stylesheet" href="style.css">
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- External JS for tab functionality -->
   <script src="script.js"></script>
 
   <style>
-    /* Global styles to ensure consistent width and spacing */
     body {
-      max-width: 800 px;
+      max-width: 800px;
       width: 80%;
       margin: 0 auto;
       padding: 20px;
       font-family: 'Lato', sans-serif;
     }
-
-    h1 {
-      text-align: center;
-      font-weight: normal;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    h3, h4, h5 {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    table {
-      width: 100%;
-      border-spacing: 0;
-      border-collapse: collapse;
-      margin-bottom: 30px;
-    }
-
-    td, th {
-      padding: 12px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .project-thumbnail {
-      border-radius: 0;
-    }
-
-    p, ul {
-      margin-bottom: 30px;
-    }
-
-    .intro p {
-      margin-bottom: 15px;
-    }
-
-    .interest p{
-      margin-bottom: 15px;
-    }
-    
-    .project_description h4 {
-      font-size: 13px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    .project_description p{
-      margin-bottom: 15px;
-    }
+    h1 { text-align: center; font-weight: normal; margin-top: 20px; margin-bottom: 20px; }
+    h2 { margin-top: 20px; margin-bottom: 20px; }
+    h3, h4, h5 { margin-top: 15px; margin-bottom: 15px; }
+    table { width: 100%; border-spacing: 0; border-collapse: collapse; margin-bottom: 30px; }
+    td, th { padding: 12px; border-bottom: 1px solid #ddd; }
+    img { width: 100%; max-width: 100%; border-radius: 50%; object-fit: cover; }
+    .project-thumbnail { border-radius: 0; }
+    p, ul { margin-bottom: 30px; }
+    .intro p { margin-bottom: 15px; }
+    .project_description h4 { font-size: 13px; margin-top: 10px; margin-bottom: 10px; }
+    .project_description p { margin-bottom: 15px; }
   </style>
 </head>
 
@@ -102,226 +45,213 @@
   <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
     <button class="tablinks" onclick="openTab(event, 'Honors')">Honors</button>
-    <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-    <button class="tablinks" onclick="openTab(event, 'Extracurriculars')">Extracurricular Activities</button>
+    <button class="tablinks" onclick="openTab(event, 'Extracurriculars')">Activities</button>
   </div>
 
-  <!-- Home content -->
+  <!-- ==================== HOME (merged with Projects) ==================== -->
   <div id="Home" class="tabcontent activecontent">
     <h1 class="profile-name">Junghyun Kim</h1>
-      <table>
+    <table>
       <tr>
-          <td style="width: 60%;">
+        <td style="width: 60%;">
           <div class="intro">
-              <p>I'm an undergraduate at <a href="https://www.yonsei.ac.kr/en_sc/">Yonsei University</a>, majoring in Business Administration and <a href="https://computing.yonsei.ac.kr/eng/eng3_1.php">AI & Business (Convergence Advanced Major)</a>.</p>
-              <p>I believe that <strong>innovation starts by addressing the discomforts I and those around me experience in daily life</strong>. That's why I put considerable effort into understanding and analyzing users' minds. Now, I am currently strengthening my foundation by taking courses in Consumer Behavior and Strategic Management, studying UX design methodologies in a club, and building an understanding of technical skill sets.</p>
-              <p>Previously, I was involved in projects that captured consumer complaints and introduced innovative solutions based on web products. For example, I developed a <strong>web platform for disability mobility rights</strong>, and I also contributed to the creation of a <strong>real-time seat tracking system</strong> as part of the Uni.flow initiative at Yonsei University.</p>
+            <p>I'm an undergraduate at <a href="https://www.yonsei.ac.kr/en_sc/">Yonsei University</a>, majoring in Business Administration and <a href="https://computing.yonsei.ac.kr/eng/eng3_1.php">AI & Business (Convergence Advanced Major)</a>.</p>
+            <p>I believe that <strong>innovation starts by addressing the discomforts I and those around me experience in daily life</strong>. With this mindset, I've been building my career at the intersection of <strong>marketing, strategy, and technology</strong> — from executing global product launches at a digital marketing agency to driving growth for a B2B SaaS startup.</p>
+            <p>Currently, I work as a Platform Planning AE Assistant at <strong>PTKOREA</strong>, facilitating cross-border communications for Samsung's global campaigns. Previously, I led growth marketing at <strong><a href="#project-molcube">MolCube</a></strong>, and spearheaded projects including a <strong><a href="#project-uniflow">real-time facility occupancy service</a></strong>, a <strong><a href="#project-alformentor">mentorship support system</a></strong>, and a <strong><a href="#project-jipgap">rental price analytics platform</a></strong>.</p>
           </div>
-              <p style="text-align:center">
-              <a target="_blank" href="mailto:justina2003@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
-              <a href="https://Justina-03.github.io/pdfs/Junghyunkim_CV.pdf">CV</a> &nbsp;/&nbsp;
-              <a href="https://github.com/Justina-03?tab=followers">GitHub</a> &nbsp;/&nbsp;
-              <a href="https://www.linkedin.com/in/jung-hyun-kim-a9414928b/">LinkedIn</a> &nbsp;/&nbsp;
-              <a href="https://shell-swift-2e0.notion.site/Self-Introduction-61417f57c4eb4dbe95a7ab6d6d82d8ec?pvs=4">Notion</a> &nbsp;/&nbsp;
-              <a href="/pdfs/portfolio_junghyunkim.pdf">Portfolio</a>
+          <p style="text-align:center">
+            <a target="_blank" href="mailto:justina2003@yonsei.ac.kr">Email</a> &nbsp;/&nbsp;
+            <a href="https://Justina-03.github.io/pdfs/Junghyunkim_CV.pdf">CV</a> &nbsp;/&nbsp;
+            <a href="https://github.com/Justina-03?tab=followers">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/jung-hyun-kim-a9414928b/">LinkedIn</a> &nbsp;/&nbsp;
+            <a href="https://shell-swift-2e0.notion.site/Self-Introduction-61417f57c4eb4dbe95a7ab6d6d82d8ec?pvs=4">Notion</a> &nbsp;/&nbsp;
+            <a href="/pdfs/portfolio_junghyunkim.pdf">Portfolio</a>
           </p>
-          </td>
-          <td style="width: 40%; max-width: 40%;">
+        </td>
+        <td style="width: 40%; max-width: 40%;">
           <img src="images/profile.png" alt="profile photo">
-          </td>
+        </td>
       </tr>
-      </table>
-
-    <!-- Education Section -->
-    <h2>Education</h2>
-    <table style="width: 100%; table-layout: fixed; border-spacing: 20px 10px;">
-        <thead>
-        <tr>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Degree</th>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Institution</th>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Year</th>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Details</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">B.S. in Business Administration & AI and Business</td>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Yonsei University, Seoul, Korea</td>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">2022 - Present</td>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">GPA: 4.06/4.3</td>
-        </tr>
-        <tr>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">High School Diploma</td>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">CheongShim International Academy</td>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">2019 - 2022</td>
-            <td style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Focus on global talents in the information era</td>
-        </tr>
-        </tbody>
     </table>
 
-    <!-- Research Interests Section -->
-    <h2>Research Interests</h2>
-    <div class="interest">
-        <p>My academic focus lies in leveraging AI and technology for <strong>social innovation</strong> and <strong>consumer behavior analysis</strong>. I am particularly interested in exploring how <strong>Generative AI</strong> and <strong>Web Development</strong> can address feasible solutions.</p>
-        <p>Therefore, I’ve worked on projects aimed at enhancing accessibility and developing digital platforms, such as the <strong>disability mobility rights project</strong> and the <strong>real-time seat tracking system</strong>.</p>
-    </div>
-
-    <div class="honors">
-      <h2>Honors & Awards</h2>
-      <table style="width: 100%; table-layout: fixed; border-spacing: 20px 10px;">
-        <thead>
-          <tr>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Award Name</th>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 17%;">Result</th>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 40%;">Details</th>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 10%;">Date</th>
-    
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#project-seat-tracking'"><strong>IHEI Festa</strong></a></td> 
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Top Award</strong></td> 
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Impact Business Best Team, <strong>selected from the 30 teams</strong> that passed the preliminary round.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Jan 2024</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#AI-governance'">IHEI Education Innovation Proposal Contest</a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Proposed a subject "AI governance and public ethics."</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Jan 2024</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#AI-convergence'">AI Convergence Idea Contest</a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Proposed a decentralized AI solution to address data monopolization.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Dec 2023</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#Wrtn'"><strong>Wrtn Prompthon</strong></a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Top Award</strong></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Created an AI communication tool that bridges the generation gap, <strong>selected from 20 teams</strong>.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Sept 2023</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2023 Honors</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Honors</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Presented to students who are within the top 10% of their grade.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2023</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#project-for-disability'">IHEI Winter Workstation</a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Developed a web platform to improve mobility access for individuals with disabilities using Kakao Maps API.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Feb 2023</td>
-          </tr>
-          <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2022 Honors</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Honors</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Presented to students who are within the top 10% of their grade.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2022</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <!-- Scholarships Section -->
-      <h2>Scholarships</h2>
-      <table style="width: 100%; table-layout: fixed; border-spacing: 20px 10px;">
-          <thead>
-          <tr>
-              <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Scholarship</th>
-              <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Details</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">AI & Business Convergence Advanced Major Scholarship</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">$1,500 for living expenses (Fall 2023)</td>
-          </tr>
-          <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Changgang Foundation Scholarship</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Full tuition coverage (Spring 2023)</td>
-          </tr>
-          <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Yonsei University Merit-based Scholarship</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">One-third tuition fees (Fall 2022)</td>
-          </tr>
-          <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Lee Doo-Won Scholarship, Yonsei School of Business</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">$1,900 for living expenses (Spring 2022)</td>
-          </tr>
-          <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Innovative Talent Scholarship (University Innovation Support Project)</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Living expenses support (Oct 2024)</td>
-          </tr>
-          </tbody>
-      </table>
-    </div>
-
-    <div class="Projects">
-      <h2>Projects & Researches</h2>
-      <table>
+    <!-- Education -->
+    <h2>Education</h2>
+    <table style="width: 100%; table-layout: fixed;">
+      <thead>
         <tr>
-          <td style="width:25%;"><img src="/tn/images/2024-07-26 152137.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
-            <h3>Exchange Student Information Integration App</h3>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Degree</th>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Institution</th>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Year</th>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">B.S. in Business Administration & AI and Business</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Yonsei University, Seoul, Korea</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">2022 – Present</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">GPA: 4.11/4.3</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">High School Diploma</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">CheongShim International Academy</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">2019 – 2022</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Focus on global talents in the information era</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Work Experience -->
+    <h2>Work Experience</h2>
+    <table style="width: 100%; table-layout: fixed;">
+      <thead>
+        <tr>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Company</th>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Role</th>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Period</th>
+          <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>PTKOREA</strong> – Digital Marketing Agency</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Platform Planning, AE Assistant</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Jan. 2026 – Present</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Facilitated cross-border communications with 78 overseas subsidiaries for the Samsung Galaxy S26 Unpacked global launch; conducted multi-stage QA on AEM and QA servers to ensure 100% brand guideline compliance.</td>
+        </tr>
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;" id="project-molcube"><strong>MolCube Inc.</strong> – CADD Molecular Simulation Software</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Growth Marketing Intern</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Aug. 2025 – Nov. 2025</td>
+          <td style="padding: 12px; border-bottom: 1px solid #ddd;">Achieved a 67% email open rate and secured 2 international paid contracts through targeted B2B outreach; redesigned the IR deck adopted by executives for Series A investor meetings.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Projects -->
+    <h2>Projects & Research</h2>
+    <table>
+      <!-- All For Mentor -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/allformentor.png" alt="All For Mentor" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="project-alformentor">
+            <h3>All For Mentor: Mentoring Support System</h3>
             <div class="project_description">
-              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong></p>
-              <p>🗓️ July 2024 ~ September 2024</p>
-              <p>I Designed an app to help students who face difficulties in obtaining information on exchange programs. I conducted user research and developed a prototype based on findings. Therefore I earned the top presenter award at a design seminar for presenting this project.</p>
-              <a href="https://www.figma.com/proto/R7rUrid7Nlz6SQgUpWgtnY/Untitled?node-id=0-1&t=sChIN2wPhZJmGAe5-1">Figma</a> &nbsp;/&nbsp;
-              <a href="/pdfs/codeit presentation.pdf">Presentation PDF</a>
+              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong> – KFAS Forest of Talent (인재림 4기)</p>
+              <p>🗓️ Feb. 2025 – Feb. 2026</p>
+              <p>Built a mentor support system by producing specialized digital content and managing SNS channels, generating 1,200+ blog views and an average of 500+ views per Instagram post. Spearheaded B2B outreach by drafting partnership proposals, securing official meetings with 4 corporations. Expanded reach to 22+ corporations and 150+ community service centers, integrating corporate feedback into specialized mentoring kits.</p>
+              <!-- Add links here when available -->
             </div>
-          </td>
-        </tr>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/uniflow.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
-              <h3>Real-Time Seat Tracking at Uni.flow</h3>
-              <div class="project_description">
-                <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Doyoung Kweon, Yoonseo Jung, Hyunjin Kang</p>
-                <p>🗓️ August 2023 ~ March 2024</p>
-                <p>Our team initially started by recommending campus spaces and providing detailed information, focusing on introducing hidden spots within the school. We concentrated on creating content and uploading it on Notion and Instagram. However, later on, we realized that the main issue students faced was the inability to access real-time information. As a result, we collaborated with the development team to create a device that could address this problem. We even got the chance to install these devices in places like Hankyung Hall and Matnasaem and launched the information on the web. During this process, I contributed by conceptualizing the website where the information would be uploaded and visualizing it using Figma, while also overseeing general promotion and contacting stakeholders.</p>
-                <a href="https://www.instagram.com/uniflow_official/">Instagram</a> &nbsp;/&nbsp;
-                <a href="https://www.notion.so/uniflow/Uni-flow-4d46b8be433041d9933eb0ada1dd8bc6">Team Notion</a> &nbsp;/&nbsp;
-                <a href="https://link.inpock.co.kr/y_place">Website</a> &nbsp;/&nbsp;
-                <a href="/pdfs/poster uniflow.pdf">Poster</a> &nbsp;/&nbsp;
-                <a href="/pdfs/uniflow portfolio.pdf">Portfolio</a>
+      <!-- MCED -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/mced.png" alt="MCED project" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="project-mced">
+            <h3>MCED: Market Entry Strategy for a U.S. Biotech Firm</h3>
+            <div class="project_description">
+              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong> – IXL Korea, Industry-Academia Collaboration</p>
+              <p>🗓️ Mar. 2025 – Jun. 2025</p>
+              <p>Led deep-dive research into the U.S. MCED (Multi-Cancer Early Detection) landscape, analyzing competitor dynamics, regulatory requirements, and biotech trends. Formulated a targeted market segmentation strategy and Value Propositions by analyzing user needs across age, smoking history, and regional characteristics. Synthesized weekly market insights using the IMBOK framework and presented strategic findings to senior stakeholders.</p>
+              <!-- Add links here when available -->
             </div>
-          </td>
-        </tr>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/ai conver.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
+      <!-- Jipgap Reading -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/jipgap.png" alt="Jipgap Reading" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="project-jipgap">
+            <h3>집값리딩 (Jipgap Reading): Rental Price Analytics Web Service</h3>
+            <div class="project_description">
+              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong> – Yonsei Computer Club POOLC</p>
+              <p>🗓️ Mar. 2024 – Jun. 2025</p>
+              <p>Participated in the planning and design of a web service helping users look up and assess rental prices for off-campus housing. Designed UI/UX using Figma and produced IR materials and investor proposal documents. Selected as a Winter Workstation team and received KRW 500,000 in activity funding, with positive evaluations on IR design and brand concept completeness.</p>
+              <!-- Add links here when available -->
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Exchange Student App -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/2024-07-26 152137.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <h3>Exchange Student Information Integration App</h3>
+          <div class="project_description">
+            <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong></p>
+            <p>🗓️ July 2024 – September 2024</p>
+            <p>Designed an app to help students who face difficulties obtaining information on exchange programs. Conducted user research and developed a prototype based on findings, earning the top presenter award at a design seminar.</p>
+            <a href="https://www.figma.com/proto/R7rUrid7Nlz6SQgUpWgtnY/Untitled?node-id=0-1&t=sChIN2wPhZJmGAe5-1">Figma</a> &nbsp;/&nbsp;
+            <a href="/pdfs/codeit presentation.pdf">Presentation PDF</a>
+          </div>
+        </td>
+      </tr>
+
+      <!-- Uni.flow -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/uniflow.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="project-uniflow">
+            <h3>Uni.flow: Real-Time Facility Occupancy Service</h3>
+            <div class="project_description">
+              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Doyoung Kweon, Yoonseo Jung, Hyunjin Kang</p>
+              <p>🗓️ August 2023 – March 2024</p>
+              <p>Our team initially started by recommending campus spaces and providing detailed information. We later collaborated with the development team to create a real-time occupancy tracking device, installing them in locations like Hankyung Hall and Matnasaem. I contributed by conceptualizing and visualizing the website using Figma, overseeing general promotion, and contacting stakeholders. The project raised KRW 8.5M in funding and won the Grand Prize at IHEI Festa (Impact Business).</p>
+              <a href="https://www.instagram.com/uniflow_official/">Instagram</a> &nbsp;/&nbsp;
+              <a href="https://www.notion.so/uniflow/Uni-flow-4d46b8be433041d9933eb0ada1dd8bc6">Team Notion</a> &nbsp;/&nbsp;
+              <a href="https://link.inpock.co.kr/y_place">Website</a> &nbsp;/&nbsp;
+              <a href="/pdfs/poster uniflow.pdf">Poster</a> &nbsp;/&nbsp;
+              <a href="/pdfs/uniflow portfolio.pdf">Portfolio</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <!-- AI Convergence -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/ai conver.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="AI-convergence">
             <h3>AI Convergence Idea Contest</h3>
             <div class="project_description">
-              <p>Minju Kim, <strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jaeeun Lee, Jihoon Woo</p>
+              <p>Minjoo Cho, <strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jaeeun Lee, Jihoon Woo</p>
               <p>🗓️ December 2023</p>
-              <p>Our team predicted AI issues that could arise in ten years and devised onboarding strategies for each domain. We raised concerns about the monopolization of data power by centralized AI agent systems and proposed a decentralized AI solution that combines concepts from Bitcoin and AI as a way to address this. Additionally, we suggested efforts in international politics, law, and education to mitigate the drawbacks and strengthen the advantages of decentralized AI, using practical examples like establishing legal regulations for unstructured information, AI governance, and creating participatory, hands-on curriculums for each domain.</p>
+              <p>Our team predicted AI issues that could arise in ten years and devised onboarding strategies for each domain. We raised concerns about the monopolization of data power by centralized AI agent systems and proposed a decentralized AI solution combining concepts from Bitcoin and AI. We also suggested efforts in international politics, law, and education to strengthen the advantages of decentralized AI.</p>
               <a href="/pdfs/ai convergence ppt.pdf">Presentation PDF</a>
-              </div>
-          </td>
-        </tr>
+            </div>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/1.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
+      <!-- Social Innovation -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/1.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="AI-governance">
             <h3>Social Innovation Education Proposal Contest</h3>
             <div class="project_description">
               <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jihyun Ryu</p>
               <p>🗓️ December 2023</p>
-              <p>We proposed a course titled "AI Governance and Public Ethics," which would focus on legal discussions regarding potential issues in AI utilization and encourage students to find their own answers to these challenges.</p>
+              <p>We proposed a course titled "AI Governance and Public Ethics," focusing on legal discussions regarding potential issues in AI utilization and encouraging students to find their own answers to these challenges.</p>
               <a href="/pdfs/innovation suggestion.pdf">Presentation PDF</a> &nbsp;/&nbsp;
               <a href="/pdfs/innovation awards.pdf">Award Certificate</a>
-            </div> 
-          </td>
-        </tr>
+            </div>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/KakaoTalk_20231121_020654936.jpg" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
+      <!-- Wrtn -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/KakaoTalk_20231121_020654936.jpg" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="Wrtn">
             <h3>Wrtn Prompthon</h3>
             <div class="project_description">
               <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Sohee Choi</p>
@@ -330,417 +260,226 @@
               <a href="/pdfs/wrtn winner.pdf">Award Certificate</a> &nbsp;/&nbsp;
               <a href="https://store.wrtn.ai/store/details/65014989d7c80fbbec18f0bb">AI tool link</a>
             </div>
-          </td>
-        </tr>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/webinterface.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
-            <h3>Dead Battery Collection Box Locator App (Web Interface Course Project)</h3>
-            <div class="project_description">
-              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jihyun Ryu, Seohyun Kim, Chaehyun Kim, Seunghyun Lee</p>
-              <p>🗓️ April 2023 ~ June 2023</p>
-              <p>We planned an app to help users easily locate dead battery collection boxes and report new locations. The project implemented UI/UX principles learned in the course, and I contributed by designing the “Update the position of the Collection Box” screen using Figma and preparing the presentation and final PPT.</p>
-              <a href="https://www.figma.com/file/wIiXGceaaopt0ctNLpTx8s/prototype?type=design&node-id=0%3A1&t=RmVc5giqgVGobfyT-1">Figma</a> &nbsp;/&nbsp;
-              <a href="/pdfs/webinterface portfolio.pdf">Presentation PDF</a>
-            </div>
-          </td>
-        </tr>
+      <!-- Dead Battery -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/webinterface.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <h3>Dead Battery Collection Box Locator App</h3>
+          <div class="project_description">
+            <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jihyun Ryu, Seohyun Kim, Chaehyun Kim, Seunghyun Lee</p>
+            <p>🗓️ April 2023 – June 2023</p>
+            <p>Planned an app to help users easily locate dead battery collection boxes and report new locations. Contributed by designing the "Update the position of the Collection Box" screen using Figma and preparing the final presentation.</p>
+            <a href="https://www.figma.com/file/wIiXGceaaopt0ctNLpTx8s/prototype?type=design&node-id=0%3A1&t=RmVc5giqgVGobfyT-1">Figma</a> &nbsp;/&nbsp;
+            <a href="/pdfs/webinterface portfolio.pdf">Presentation PDF</a>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/ai.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
-            <h3>Braille Signage AI Identification Project (Understanding and Using AI Course Project)</h3>
-            <div class="project_description">
-              <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong></p>
-              <p>🗓️ May 2023 ~ June 2023</p>
-              <p>I Identified an issue where braille signs for male and female restrooms were installed incorrectly, causing difficulties for visually impaired individuals. I tried to develope a solution by training an image dataset, allowing AI to identify the incorrect signage.</p>
-              <a href="https://drive.google.com/drive/u/1/folders/1K7CMlb-TphNoCLlkovNClddHhBXxil5R">Dataset</a> &nbsp;/&nbsp;
-              <a href="https://www.youtube.com/watch?v=2WJpEPUOamw">Youtube</a>
-            </div>
-          </td>
-        </tr>
+      <!-- Braille AI -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/ai.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <h3>Braille Signage AI Identification Project</h3>
+          <div class="project_description">
+            <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong></p>
+            <p>🗓️ May 2023 – June 2023</p>
+            <p>Identified an issue where braille signs for male and female restrooms were installed incorrectly, causing difficulties for visually impaired individuals. Developed a solution by training an image dataset to allow AI to identify incorrect signage.</p>
+            <a href="https://drive.google.com/drive/u/1/folders/1K7CMlb-TphNoCLlkovNClddHhBXxil5R">Dataset</a> &nbsp;/&nbsp;
+            <a href="https://www.youtube.com/watch?v=2WJpEPUOamw">Youtube</a>
+          </div>
+        </td>
+      </tr>
 
-        <tr>
-          <td style="width:25%;"><img src="/tn/images/winterworkstation.png" alt="project image" class="project-thumbnail"></td>
-          <td style="width:75%;">
+      <!-- Disability -->
+      <tr>
+        <td style="width:25%;"><img src="/tn/images/winterworkstation.png" alt="project image" class="project-thumbnail"></td>
+        <td style="width:75%;">
+          <div id="project-for-disability">
             <h3>Web Project for Disability Mobility Rights</h3>
             <div class="project_description">
               <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Sohee Choi, Jihyeon Ryu, Seohyeon Yoon</p>
-              <p>🗓️ December 2022 ~ February 2023</p>
-              <p>Our team led the development of a website aimed at improving mobility access for the blind, winning the Excellence Award ($760 prize). In this team, I took on a role in developing a web platform using Kakao Maps API.</p>
+              <p>🗓️ December 2022 – February 2023</p>
+              <p>Led the development of a website aimed at improving mobility access for the blind, winning the Excellence Award ($760 prize). Developed the web platform using Kakao Maps API.</p>
               <a href="https://claireshyoon1.wixsite.com/my-site">Website</a> &nbsp;/&nbsp;
               <a href="/pdfs/winter workstation.pdf">Presentation PDF</a>
-             </div>    
-          </td>
-        </tr>
-      </table>
-  </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-    <div class="extracurriculars">
-      <h2>Extracurricular Activities</h2>
-      <table class="extracurricular-table">
-        <thead>
-            <tr>
-                <th>Activity</th>
-                <th>Position</th>
-                <th>Period</th>
-                <th>Details</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                <td>Mapo-gu Seogang Public Library</td>
-                <td>Student Worker</td>
-                <td>Sept. 2023 – Feb. 2024</td>
-                <td>Managed book organization, handled book returns, and assisted library patrons.</td>
-              </tr>
-              <tr>
-                <td>Math Academy</td>
-                <td>Administrative Assistant</td>
-                <td>Aug. 2022 – Dec. 2023</td>
-                <td>Managed assignments, test results, and checked attendance of students.</td>
-              </tr>
-              <tr>
-                <td>Seoul Metropolitan Office of Education</td>
-                <td>Student Worker (Gender Equality Team)</td>
-                <td>Mar. 2023 – Jun. 2023</td>
-                <td>Assisted with office administration, managed incoming calls, shredded confidential papers.</td>
-              </tr>
-          </tbody>
-      </table>
+  </div><!-- end Home -->
 
-      <h2>Experience</h2>
-      <table class="extracurricular-table">
-          <thead>
-              <tr>
-                  <th>Experience</th>
-                  <th>Position</th>
-                  <th>Period</th>
-                  <th>Details</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Codeit Boost (IT Bootcamp Club)</td>
-                  <td>Design Team Member</td>
-                  <td>March 2024 – Present</td>
-                  <td>Designed an app for students with difficulties obtaining exchange program information; earned top presenter award.</td>
-              </tr>
-              <tr>
-                  <td>Yonsei College of Engineering Computer Club (POOLC)</td>
-                  <td>Member</td>
-                  <td>March 2024 – Present</td>
-                  <td>Attended web development seminars and deepened AI knowledge through deep learning seminars.</td>
-              </tr>
-              <tr>
-                  <td>Youth Mentorship Program</td>
-                  <td>Co-founder</td>
-                  <td>Sept. 2023 – Present</td>
-                  <td>Co-founded a mentorship program for middle school students; raised over $2,750 for projects.</td>
-              </tr>
-          </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- Honors content -->
+  <!-- ==================== HONORS ==================== -->
   <div id="Honors" class="tabcontent">
     <div class="honors">
       <h2>Honors & Awards</h2>
-      <table style="width: 100%; table-layout: fixed; border-spacing: 20px 10px;">
+      <table style="width: 100%; table-layout: fixed;">
         <thead>
           <tr>
-            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Award Name</th>
+            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Award</th>
             <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 17%;">Result</th>
             <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 40%;">Details</th>
             <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 10%;">Date</th>
-    
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#project-seat-tracking'"><strong>IHEI Festa</strong></a></td> 
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Top Award</strong></td> 
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Impact Business Best Team, <strong>selected from the 30 teams</strong> that passed the preliminary round.</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Yonsei University Student-Designed Major Development Contest</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award (2nd)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Proposed a "Service System Design" major integrating industrial engineering, integrated design, and library science.</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Nov 2024</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#project-uniflow"><strong>IHEI Festa</strong></a></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Top Award</strong></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Impact Business Best Team — real-time facility occupancy service 'Uni.flow', <strong>selected from 30 teams</strong>.</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Jan 2024</td>
           </tr>
           <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#AI-governance'">IHEI Education Innovation Proposal Contest</a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Proposed a subject "AI governance and public ethics."</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Jan 2024</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#AI-governance">IHEI Education Innovation Proposal Contest</a></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award (4th)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Proposed a subject "AI Governance and Public Ethics."</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Dec 2023</td>
           </tr>
           <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#AI-convergence'">AI Convergence Idea Contest</a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#AI-convergence">AI Convergence Idea Contest</a></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award (2nd)</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Proposed a decentralized AI solution to address data monopolization.</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Dec 2023</td>
           </tr>
           <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#" onclick="openTab(event, 'Projects'); location.href='#Wrtn'"><strong>Wrtn Prompthon</strong></a></td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Top Award</strong></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#Wrtn"><strong>Wrtn Prompthon</strong></a></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><strong>Top Award (1st)</strong></td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Created an AI communication tool that bridges the generation gap, <strong>selected from 20 teams</strong>.</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Sept 2023</td>
           </tr>
           <tr>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2023 Honors</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Honors</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Presented to students who are within the top 10% of their grade.</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Top 10% of grade.</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2023</td>
           </tr>
           <tr>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">IHEI Winter Workstation</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Developed a web platform to improve mobility access for individuals with disabilities using Kakao Maps API.</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Feb 2023</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;"><a href="#project-for-disability">IHEI Winter Workstation</a></td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Excellence Award (2nd)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Web platform to improve mobility access for individuals with disabilities using Kakao Maps API.</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Jan 2023</td>
           </tr>
           <tr>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2022 Honors</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Honors</td>
-            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Presented to students who are within the top 10% of their grade.</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Top 10% of grade.</td>
             <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2022</td>
           </tr>
         </tbody>
       </table>
-      
-      <!-- Scholarships Section -->
+
+      <!-- Scholarships -->
       <h2>Scholarships</h2>
-      <table style="width: 100%; table-layout: fixed; border-spacing: 20px 10px;">
-          <thead>
+      <table style="width: 100%; table-layout: fixed;">
+        <thead>
           <tr>
-              <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Scholarship</th>
-              <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Details</th>
+            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Scholarship</th>
+            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd;">Details</th>
+            <th style="text-align: left; padding: 12px; border-bottom: 1px solid #ddd; width: 15%;">Period</th>
           </tr>
-          </thead>
-          <tbody>
+        </thead>
+        <tbody>
           <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">AI & Business Convergence Advanced Major Scholarship</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">$1,500 for living expenses (Fall 2023)</td>
-          </tr>
-          <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Changgang Foundation Scholarship</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Full tuition coverage (Spring 2023)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">KFAS 인재림 (Forest of Talent) Scholarship</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">KRW 8,000,000 — Selected as a Forest of Talent scholar (인재림 4기), a KFAS program nurturing undergraduates who create social value through the ABCD curriculum.</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">2025</td>
           </tr>
           <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Yonsei University Merit-based Scholarship</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">One-third tuition fees (Fall 2022)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">AI & Business Convergence Advanced Major Scholarship</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">$1,500 for living expenses</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Fall 2023</td>
           </tr>
           <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Lee Doo-Won Scholarship, Yonsei School of Business</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">$1,900 for living expenses (Spring 2022)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Changgang Foundation Scholarship</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Full tuition coverage</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2023</td>
           </tr>
           <tr>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Innovative Talent Scholarship (University Innovation Support Project)</td>
-              <td style="padding: 12px; border-bottom: 1px solid #ddd;">Living expenses support (Oct 2024)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Yonsei University Merit-based Scholarship</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">One-third tuition fees</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Fall 2022</td>
           </tr>
-          </tbody>
+          <tr>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Lee Doo-Won Scholarship, Yonsei School of Business</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">$1,900 for living expenses</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Spring 2022, Spring 2025</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Innovative Talent Scholarship (University Innovation Support Project)</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Living expenses support</td>
+            <td style="padding: 12px; border-bottom: 1px solid #ddd;">Oct 2024</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
 
-  <div id="Projects" class="tabcontent">
-    <div class="Projects">
-        <h2>Projects & Researches</h2>
-        <table>
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/2024-07-26 152137.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <h3>Exchange Student Information Integration App</h3>
-              <div class="project_description">
-                <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong></p>
-                <p>🗓️ July 2024 ~ September 2024</p>
-                <p>I Designed an app to help students who face difficulties in obtaining information on exchange programs. I conducted user research and developed a prototype based on findings. Therefore I earned the top presenter award at a design seminar for presenting this project.</p>
-                <a href="https://www.figma.com/proto/R7rUrid7Nlz6SQgUpWgtnY/Untitled?node-id=0-1&t=sChIN2wPhZJmGAe5-1">Figma</a> &nbsp;/&nbsp;
-                <a href="/pdfs/codeit presentation.pdf">Presentation PDF</a>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/uniflow.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <div id = "project-seat-tracking">
-                <h3>Real-Time Seat Tracking at Uni.flow</h3>
-                <div class="project_description">
-                  <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Doyoung Kweon, Yoonseo Jung, Hyunjin Kang</p>
-                  <p>🗓️ August 2023 ~ March 2024</p>
-                  <p>Our team initially started by recommending campus spaces and providing detailed information, focusing on introducing hidden spots within the school. We concentrated on creating content and uploading it on Notion and Instagram. However, later on, we realized that the main issue students faced was the inability to access real-time information. As a result, we collaborated with the development team to create a device that could address this problem. We even got the chance to install these devices in places like Hankyung Hall and Matnasaem and launched the information on the web. During this process, I contributed by conceptualizing the website where the information would be uploaded and visualizing it using Figma, while also overseeing general promotion and contacting stakeholders.</p>
-                  <a href="https://www.instagram.com/uniflow_official/">Instagram</a> &nbsp;/&nbsp;
-                  <a href="https://www.notion.so/uniflow/Uni-flow-4d46b8be433041d9933eb0ada1dd8bc6">Team Notion</a> &nbsp;/&nbsp;
-                  <a href="https://link.inpock.co.kr/y_place">Website</a> &nbsp;/&nbsp;
-                  <a href="/pdfs/poster uniflow.pdf">Poster</a> &nbsp;/&nbsp;
-                  <a href="/pdfs/uniflow portfolio.pdf">Portfolio</a>
-                </div>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/ai conver.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <div class="AI-convergence">
-                <h3>AI Convergence Idea Contest</h3>
-                <div class="project_description">
-                  <p>Minju Kim, <strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jaeeun Lee, Jihoon Woo</p>
-                  <p>🗓️ December 2023</p>
-                  <p>Our team predicted AI issues that could arise in ten years and devised onboarding strategies for each domain. We raised concerns about the monopolization of data power by centralized AI agent systems and proposed a decentralized AI solution that combines concepts from Bitcoin and AI as a way to address this. Additionally, we suggested efforts in international politics, law, and education to mitigate the drawbacks and strengthen the advantages of decentralized AI, using practical examples like establishing legal regulations for unstructured information, AI governance, and creating participatory, hands-on curriculums for each domain.</p>
-                  <a href="/pdfs/ai convergence ppt.pdf">Presentation PDF</a>
-                </div>
-              </div>  
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/1.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <div class="AI-governance">
-                <h3>Social Innovation Education Proposal Contest</h3>
-                <div class="project_description">
-                  <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jihyun Ryu</p>
-                  <p>🗓️ December 2023</p>
-                  <p>We proposed a course titled "AI Governance and Public Ethics," which would focus on legal discussions regarding potential issues in AI utilization and encourage students to find their own answers to these challenges.</p>
-                  <a href="/pdfs/innovation suggestion.pdf">Presentation PDF</a> &nbsp;/&nbsp;
-                  <a href="/pdfs/innovation awards.pdf">Award Certificate</a>
-                </div>
-              </div>  
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/KakaoTalk_20231121_020654936.jpg" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <div class="Wrtn">
-                <h3>Wrtn Prompthon</h3>
-                <div class="project_description">
-                  <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Sohee Choi</p>
-                  <p>🗓️ September 2023</p>
-                  <p>We developed an AI tool to resolve communication gaps between younger and older generations. Users could input a brief situation and a key message, and the AI would generate a smooth or witty way to deliver the message.</p>
-                  <a href="/pdfs/wrtn winner.pdf">Award Certificate</a> &nbsp;/&nbsp;
-                  <a href="https://store.wrtn.ai/store/details/65014989d7c80fbbec18f0bb">AI tool link</a>
-                </div>
-              </div>  
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/webinterface.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <h3>Dead Battery Collection Box Locator App (Web Interface Course Project)</h3>
-              <div class="project_description">
-                <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Jihyun Ryu, Seohyun Kim, Chaehyun Kim, Seunghyun Lee</p>
-                <p>🗓️ April 2023 ~ June 2023</p>
-                <p>We planned an app to help users easily locate dead battery collection boxes and report new locations. The project implemented UI/UX principles learned in the course, and I contributed by designing the “Update the position of the Collection Box” screen using Figma and preparing the presentation and final PPT.</p>
-                <a href="https://www.figma.com/file/wIiXGceaaopt0ctNLpTx8s/prototype?type=design&node-id=0%3A1&t=RmVc5giqgVGobfyT-1">Figma</a> &nbsp;/&nbsp;
-                <a href="/pdfs/webinterface portfolio.pdf">Presentation PDF</a>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/ai.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <h3>Braille Signage AI Identification Project (Understanding and Using AI Course Project)</h3>
-              <div class="project_description">
-                <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong></p>
-                <p>🗓️ May 2023 ~ June 2023</p>
-                <p>I Identified an issue where braille signs for male and female restrooms were installed incorrectly, causing difficulties for visually impaired individuals. I tried to develope a solution by training an image dataset, allowing AI to identify the incorrect signage.</p>
-                <a href="https://drive.google.com/drive/u/1/folders/1K7CMlb-TphNoCLlkovNClddHhBXxil5R">Dataset</a> &nbsp;/&nbsp;
-                <a href="https://www.youtube.com/watch?v=2WJpEPUOamw">Youtube</a>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="width:25%;"><img src="/tn/images/winterworkstation.png" alt="project image" class="project-thumbnail"></td>
-            <td style="width:75%;">
-              <div class="project-for-disability">
-                <h3>Web Project for Disability Mobility Rights</h3>
-                <div class="project_description">
-                  <p><strong><a href="https://justina-03.github.io/" class="junghyun-link">Junghyun Kim</a></strong>, Sohee Choi, Jihyeon Ryu, Seohyeon Yoon</p>
-                  <p>🗓️ December 2022 ~ February 2023</p>
-                  <p>Our team led the development of a website aimed at improving mobility access for the blind, winning the Excellence Award ($760 prize). In this team, I took on a role in developing a web platform using Kakao Maps API.</p>
-                  <a href="https://claireshyoon1.wixsite.com/my-site">Website</a> &nbsp;/&nbsp;
-                  <a href="/pdfs/winter workstation.pdf">Presentation PDF</a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-    </div>
-  </div>
-
-
-  <!-- Extracurriculars content -->
+  <!-- ==================== ACTIVITIES ==================== -->
   <div id="Extracurriculars" class="tabcontent">
     <div class="extracurriculars">
-      <h2>Extracurricular Activities</h2>
+      <h2>Activities & Experience</h2>
       <table class="extracurricular-table">
         <thead>
-            <tr>
-                <th>Activity</th>
-                <th>Position</th>
-                <th>Period</th>
-                <th>Details</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                <td>Mapo-gu Seogang Public Library</td>
-                <td>Student Worker</td>
-                <td>Sept. 2023 – Feb. 2024</td>
-                <td>Managed book organization, handled book returns, and assisted library patrons.</td>
-              </tr>
-              <tr>
-                <td>Math Academy</td>
-                <td>Administrative Assistant</td>
-                <td>Aug. 2022 – Dec. 2023</td>
-                <td>Managed assignments, test results, and checked attendance of students.</td>
-              </tr>
-              <tr>
-                <td>Seoul Metropolitan Office of Education</td>
-                <td>Student Worker (Gender Equality Team)</td>
-                <td>Mar. 2023 – Jun. 2023</td>
-                <td>Assisted with office administration, managed incoming calls, shredded confidential papers.</td>
-              </tr>
-          </tbody>
-      </table>
-
-      <h2>Experience</h2>
-      <table class="extracurricular-table">
-          <thead>
-              <tr>
-                  <th>Experience</th>
-                  <th>Position</th>
-                  <th>Period</th>
-                  <th>Details</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Codeit Boost (IT Bootcamp Club)</td>
-                  <td>Design Team Member</td>
-                  <td>March 2024 – Present</td>
-                  <td>Designed an app for students with difficulties obtaining exchange program information; earned top presenter award.</td>
-              </tr>
-              <tr>
-                  <td>Yonsei College of Engineering Computer Club (POOLC)</td>
-                  <td>Member</td>
-                  <td>March 2024 – Present</td>
-                  <td>Attended web development seminars and deepened AI knowledge through deep learning seminars.</td>
-              </tr>
-              <tr>
-                  <td>Youth Mentorship Program</td>
-                  <td>Co-founder</td>
-                  <td>Sept. 2023 – Present</td>
-                  <td>Co-founded a mentorship program for middle school students; raised over $2,750 for projects.</td>
-              </tr>
-          </tbody>
+          <tr>
+            <th>Experience</th>
+            <th>Position</th>
+            <th>Period</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>KFAS Forest of Talent (인재림 4기)</strong></td>
+            <td>Scholar — SNS Marketing Lead</td>
+            <td>Feb. 2025 – Feb. 2026</td>
+            <td>Selected as a Forest of Talent scholar. Led B2B outreach and SNS marketing for the <em>All For Mentor</em> project; completed the year-long ABCD curriculum designed to build social-value creation capabilities.</td>
+          </tr>
+          <tr>
+            <td>IXL Korea – Industry-Academia Collaboration Internship</td>
+            <td>Market Research & Strategy Intern</td>
+            <td>Mar. 2025 – Jun. 2025</td>
+            <td>Participated in an industry-academia linked internship program focused on the U.S. biotech market entry strategy project (MCED).</td>
+          </tr>
+          <tr>
+            <td>Codeit Boost (IT Bootcamp Club)</td>
+            <td>Design Team Member</td>
+            <td>Mar. 2024 – Present</td>
+            <td>Designed an app for students with difficulties obtaining exchange program information; earned top presenter award.</td>
+          </tr>
+          <tr>
+            <td>Yonsei College of Engineering Computer Club (POOLC)</td>
+            <td>Member</td>
+            <td>Mar. 2024 – Jun. 2025</td>
+            <td>Attended web development and deep learning seminars; participated in the 집값리딩 web service project.</td>
+          </tr>
+          <tr>
+            <td>Youth Mentorship Club (꾸밈없는 사람들)</td>
+            <td>Co-founder</td>
+            <td>Nov. 2023 – Feb. 2025</td>
+            <td>Co-founded a university mentoring club for high school students; led fundraising and promotional content production.</td>
+          </tr>
+          <tr>
+            <td>Yonsei Entrepreneurship Society AIM</td>
+            <td>Marketing & Planning Lead</td>
+            <td>Mar. 2023 – Mar. 2024</td>
+            <td>Led marketing and planning for the Uni.flow real-time occupancy service; executed an IMC campaign attracting 440+ visitors in 5 days.</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
 
-  <br>
-  <br>
+  <br><br>
 </body>
 </html>
